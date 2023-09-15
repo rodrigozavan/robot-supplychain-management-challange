@@ -1,10 +1,7 @@
 from datetime import datetime
 from pymongo import MongoClient
 from bson import ObjectId
-from config import config
 
-HOST = config.get('MONGODB', 'host')
-DATABASE = config.get('MONGODB', 'database')
 
 class MongoDB:
     def __init__(self, collection_name):
